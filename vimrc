@@ -28,6 +28,7 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
 set shiftwidth=4
+set tabstop=4
 set fileencodings=ucs-bom,utf-8,cp936
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
