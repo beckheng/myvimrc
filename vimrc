@@ -28,7 +28,9 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
 set shiftwidth=4
+set softtabstop=4
 set tabstop=4
+"set noexpandtab / expandtab
 set fileencodings=ucs-bom,utf-8,cp936
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
@@ -68,6 +70,7 @@ if has("autocmd")
 
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
+  autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
